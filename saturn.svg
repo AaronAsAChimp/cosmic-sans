@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1572.3352"
+   height="944.90625"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docname="saturn.svg"
+   sodipodi:docbase="/home/psycho/Desktop/jupiter-font"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   sodipodi:modified="true">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="-0.82358006"
+     inkscape:cy="16.532344"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="872"
+     inkscape:window-height="622"
+     inkscape:window-x="718"
+     inkscape:window-y="441" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(302.16745,-107.44219)">
+    <path
+       style="opacity:1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 472.46875,0 C 211.67083,7.7715612e-14 -1.8287045e-17,211.67084 0,472.46875 C 3.8511795e-16,483.07029 0.37389322,493.57177 1.0625,504 C -196.31529,602.21217 -317.06377,694.32656 -300.6875,745.78125 C -284.05556,798.03926 -129.93057,795.95276 90.09375,749.90625 C 176.00218,868.05584 315.31719,944.90626 472.46875,944.90625 C 733.26667,944.90625 944.90627,733.26668 944.90625,472.46875 C 944.90625,467.22815 944.82586,462.0121 944.65625,456.8125 C 1155.1824,354.53253 1285.6719,257.42804 1268.6875,204.0625 C 1260.4351,178.13309 1218.3581,165.56601 1151.1562,165.125 C 1079.4446,164.6544 979.14393,177.95728 860.875,203.53125 C 775.54732,80.560939 633.37368,-4.8509985e-14 472.46875,0 z M 895.1875,261.34375 C 932.05016,262.61983 955.08605,270.42172 959.875,285.46875 C 964.40241,299.69402 952.14705,318.8945 926.4375,341.1875 C 918.41954,313.43825 907.90471,286.7421 895.1875,261.34375 z M 10.09375,569.9375 C 15.756458,596.89827 23.70073,623.03511 33.75,648.09375 C 2.1626663,645.90884 -17.489876,638.15318 -21.875,624.375 C -26.316075,610.42101 -14.619723,591.69196 10.09375,569.9375 z "
+       transform="translate(8.084021e-6,107.44219)"
+       id="path2160" />
+  </g>
+</svg>
