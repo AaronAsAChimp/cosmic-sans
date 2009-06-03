@@ -1,0 +1,5 @@
+A font showing the planets to scale.  Along with some other objects of cosmic proportions.
+
+In order to illustrate the scale an indicator is placed below the image.  It is a logarithmic scale where the farther it is to the right the exponentially smaller the object is.  If there is no indicator, then the object is show relative to the size of the earth.  The indicator in this case would be in the center.  Calcuations are done using this [spread sheet](http://spreadsheets.google.com/pub?key=r9XiKwkHRn0jsGAae5q5aKA&output=html).
+
+This font is licensed under the SIL Open Font License see LICENSE for details.
