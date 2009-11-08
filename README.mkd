@@ -1,5 +1,31 @@
 A font showing the planets to scale.  Along with some other objects of cosmic proportions.
 
+Includes everything in the Universe!
+------------------------------------
+
+Includes everything in the Universe, with a few strategic omission.  
+
+* Planets
+	* Mercury - 1
+	* Venus - 2
+	* Earth - 3
+	* Mars - 4
+	* Jupiter - 5
+	* Saturn - 6
+	* Uranus - 7
+	* Neptune - 8
+* People
+	* Gustav Holst - H
+	  
+	  Gustav Holst is an english composer known for the "The Planets" suite.
+* Easter Eggs
+	* Death Star - =
+	* Hubble Space Telescope - >
+
 In order to illustrate the scale an indicator is placed below the image.  It is a logarithmic scale where the farther it is to the right the exponentially smaller the object is.  If there is no indicator, then the object is show relative to the size of the earth.  The indicator in this case would be in the center.  Calcuations are done using this [spread sheet](http://spreadsheets.google.com/pub?key=r9XiKwkHRn0jsGAae5q5aKA&output=html).
 
+Legal Stuff
+-----------
 This font is licensed under the SIL Open Font License see LICENSE for details.
+
+This font is a parody of the Comic Sans font.  "Cosmic Sans" is a common misspelling.
