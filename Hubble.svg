@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,9 +14,8 @@
    height="1024"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.46"
+   inkscape:version="0.47pre4 r22446"
    sodipodi:docname="Hubble.svg"
-   sodipodi:docbase="/home/psycho/Desktop/jupiter-font"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    sodipodi:modified="true">
@@ -47,16 +47,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="959.62238"
-     inkscape:cy="485.414"
+     inkscape:cx="1037.6224"
+     inkscape:cy="441.414"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:window-width="1167"
      inkscape:window-height="862"
-     inkscape:window-x="2135"
-     inkscape:window-y="124"
+     inkscape:window-x="2323"
+     inkscape:window-y="311"
      showgrid="false"
-     borderlayer="true" />
+     borderlayer="true"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -80,7 +81,7 @@
        sodipodi:nodetypes="cccc" />
     <path
        sodipodi:type="star"
-       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.0999999;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.0999999;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path3280"
        sodipodi:sides="3"
        sodipodi:cx="48.875"
@@ -92,17 +93,17 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 48.875,106.125 L 49.957532,108 L 51.040063,109.875 L 48.875,109.875 L 46.709936,109.875 L 47.792468,108 L 48.875,106.125 z"
-       transform="matrix(14.397157,0,0,-14.397157,-234.66347,3424.5497)" />
+       d="m 48.875,106.125 1.082532,1.875 1.082531,1.875 -2.165063,0 -2.165064,0 L 47.792468,108 48.875,106.125 z"
+       transform="matrix(14.397268,0,0,-14.397157,45.262542,3450.5497)" />
     <image
-       y="941.23132"
-       x="1087.9421"
-       id="image3311"
-       height="1059.7427"
+       sodipodi:absref="/home/sachimp/other-part/My Working Directory/Creative Projects/jupiter/jupiter-font/source-images/pastedpic_05022009_095932.png"
+       xlink:href="source-images/pastedpic_05022009_095932.png"
+       style="fill:#ff0000"
        width="1307.3848"
-       sodipodi:absref="/home/sachimp/other-part/My Working Directory/Creative Projects/jupiter/jupiter-font/pastedpic_05022009_095932.png"
-       xlink:href="pastedpic_05022009_095932.png"
-       style="fill:#ff0000" />
+       height="1059.7427"
+       id="image3311"
+       x="1087.9421"
+       y="941.23132" />
     <path
        style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 221.25073,1274.7609 L 124.98565,1203.5404 C 111.00103,1191.5215 89.112457,1170.9939 95.842032,1158.9533 L 100.6525,1152.3443 L 98.375789,1149.953 L 101.25339,1147.8581 L 103.64472,1149.8818 C 118.80744,1135.8489 145.30263,1155.9016 161.76987,1166.7561 L 258.03495,1238.368 L 254.51306,1241.8899 L 267.03534,1246.1944 L 266.64402,1251.2816 L 284.25349,1259.108 L 283.47085,1263.4125 L 624.70317,1391.3746 C 631.78779,1380.3459 640.61758,1371.3238 645.83455,1371.4172 L 898.62821,1470.4219 C 899.72787,1468.8006 902.46609,1468.6687 904.30238,1469.4434 C 908.63789,1473.2651 906.28812,1489.5966 901.52458,1507.9866 C 897.29188,1524.3278 891.15342,1542.2947 886.10594,1554.5557 C 872.10361,1587.5345 859.43301,1621.1794 843.45189,1653.1683 C 833.58723,1673.6756 823.29284,1694.5822 816.45071,1693.083 L 513.56788,1571.3828 C 503.26284,1562.4725 505.14215,1549.3446 503.78484,1537.3378 L 183.32036,1405.486 C 183.44907,1384.5561 190.20557,1357.8688 198.96507,1332.5143 C 205.25451,1314.3096 211.58125,1295.4201 224.3813,1277.5001 L 228.29451,1272.0217 L 226.72922,1269.2824 L 221.25073,1274.7609 z"
