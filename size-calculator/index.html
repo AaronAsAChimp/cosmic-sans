@@ -1,0 +1,258 @@
+<html>
+<head>
+<title>How big is it?</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<style>
+	@font-face {
+		font-family: "Cosmic Sans";
+		src: url('Cosmic.otf');
+	}
+	
+	@font-face {
+		font-family: "Konstytucyja";
+		src: url('gluk_-_Konstytucyja.otf');
+	}
+	
+	@font-face {
+		font-family: "Puritan 2";
+		src: url('Puritan2_1.otf');
+		font-weight: normal;
+	}
+	
+	@font-face {
+		font-family: "Puritan 2";
+		src: url('Puritan2Bold_1.otf');
+		font-weight: bold;
+	}
+	
+	body {
+		font-family: "Puritan 2";
+	}
+	
+	
+	h1,h2,h3 {
+		line-height: 1em;
+		margin: 0;
+	}
+	h3 {
+		font-size: 1em;
+		color: #666;
+	}
+	
+	.section {
+		margin: .5em 0;
+		padding: 0;
+	}
+	
+	li {
+		list-style-type: none;
+		cursor: pointer;
+	}
+	
+	.number {
+		font-weight: bold;
+		font-size: 1.1em;
+		color: #333;
+	}
+	
+	.cosmic {
+		font-family: "Cosmic Sans";
+	}
+	
+	.codepoint {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		font-size: 100px;
+	}
+	
+	.column {
+		width: 200px;
+		float: left;
+	}
+	
+	#col_2 {
+		width: 520px;
+		margin: 0 5px;
+	}
+	
+	#col_2 h2 {
+		display: inline-block;
+	}
+	
+	#col_2 #name {
+		font-size: 1.5em;
+	}
+	
+	#col_2 #bottom_part {
+		text-align:right;
+	}
+	
+	#page {
+		width: 930px;
+		margin: 0 auto;
+	}
+</style>
+<script>
+
+Number.prototype.toScientific = function (x) {
+
+	var parts = this.toExponential(x).split( /[e]\+?/i ,2);
+	
+	return parts[0] + ((parts[1] != 0 && parts [1] != 1)? " &times; 10<sup>" + parts[1] + "</sup>": "");
+}
+
+var units = {
+	a:	"0.0000000000001",
+	cm:	"0.00001",
+	m:	"0.001",
+	km:	"1",
+	au:	"149598000",
+	ly:	"9461000000000",
+	p:	"30857000000000",
+};
+
+var flavor = [
+	"Teensy Tiny.",
+	"2",
+	"3",
+	"4",
+	"5",
+	"6",
+	"7",
+	"8",
+	"Damn, thats big.",
+	"Holy Moley!",
+]
+
+var earth_size_km = 12742;
+var earth_size_px = 100;
+var half_template_size = 500;
+
+function size_in(size, unit, multiplier) {
+	return units[unit] * (size * multiplier);
+}
+
+function setup_form(size, unit, codepoint, name) {
+	$("#size").val(size);
+	$("#units").val(unit);
+	$("#multiplier").val("1");
+	$("#name").val(name);
+	
+	do_calculations();
+
+	$(".codepoint").fadeOut("fast", function () {
+		if(codepoint != '') {
+			$(".codepoint").text(codepoint);
+			$(".codepoint").fadeIn("fast");
+		}
+	});
+}
+
+function do_calculations() {
+	var size = $("#size").val();
+	var unit = $("#units").val();
+	var multiplier = $("#multiplier").val();
+	
+	var _km = size_in(size, unit, multiplier);
+	var _rte = size_in(size, unit, multiplier / earth_size_km);
+	var _px_size = size_in(size, unit, (multiplier / earth_size_km) * earth_size_px);
+	
+	var _with_scale = half_template_size - (((((Math.log(_px_size)/Math.LN10) - 2) / 15) * half_template_size))
+	
+	$("#in_kilometers .number").html(_km.toScientific(2));
+	$("#relative_to .number").html(_rte.toScientific(2));
+	$("#in_pixels .number").text(_px_size.toFixed(5));
+	$("#with_scale .number").text(_with_scale.toFixed(5));
+	
+	if(_with_scale > 1000) {
+		_with_scale = 1000;
+	} else if (_with_scale < 0) {
+		_with_scale = 0;
+	}
+	
+	$("#flavor_text").
+}
+
+$(function () {
+
+	$("form select").change(do_calculations);
+	
+	$("form input:text").keypress(do_calculations);
+
+	do_calculations();
+});
+</script>
+<head>
+<body>
+<div id="page">
+<div class="column" id="col_1">
+<h2>Some stuff</h2>
+<h3>to get you started</h3>
+<ul class="section">
+	<li onclick="setup_form(100000, 'ly', '', $(this).text())">Milky Way Galaxy</li>
+	<li onclick="setup_form(12742, 'km', '3', $(this).text())">Earth</li>
+	<li onclick="setup_form(108.5, 'm', '', $(this).text())">International Space Station</li>
+	<li onclick="setup_form(396.6, 'km', '=', $(this).text())">Death Star</li>
+	<li onclick="setup_form(13.2, 'm', '>', $(this).text())">Hubble Space Telescope</li>
+	<li onclick="setup_form(110.6, 'm', '@', $(this).text())">Saturn V Rocket</li>
+	<li onclick="setup_form(6250, 'a', '', $(this).text())">Wavelength of Red Light</li>
+	<li onclick="setup_form(82, 'm', '', $(this).text())">Serenity</li>
+</ul>
+
+<h2>Relative</h2>
+<h3>to everything else</h3>
+<div class="section">
+<div id="in_kilometers"><span class="number">0</span> Kilometers</div>
+<div id="relative_to"><span class="number">0</span> times the size of the Earth</div>
+</div>
+
+</div>
+
+<div class="column" id="col_2">
+<form>
+<div class="section">
+<h2>What's it Called?</h2>
+<input type="text" id="name" />
+</div>
+<fieldset>
+	<legend>How Big Is It?</legend>
+	<input type="text" id="size" />
+	<select id="units">
+		<option value="a">Angstroms (Å)</option>
+		<option value="cm">Centimeters</option>
+		<option value="m">Meters</option>
+		<option value="km" selected="selected">Kilometers</option>
+		<option value="au">Astronomical Units (AU)</option>
+		<option value="ly">Light Years</option>
+		<option value="p">Parsecs</option>
+	</select>
+	<select id="multiplier">
+		<option value="1">Long</option>
+		<option value="2">in Radius</option>
+		<!--<option value="1">in Diameter</option>-->
+	</select>
+</fieldset>
+<div id="bottom_part" class="section">
+<div id="flavor_text"></div><input type="submit" value="Send It!" />
+</div>
+</form>
+</div>
+
+<div class="column" id="col_3" >
+
+<h2>Cosmic Sans</h2>
+<h3>relevant info</h3>
+<div class="section">
+<div id="in_pixels"><span class="number">0</span> Pixels</div>
+<div id="with_scale"><span class="number">0</span> Scale Position</div>
+
+<div class="cosmic codepoint"></div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
